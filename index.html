@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Рофл Казино - Став на Сміх!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lobster&family=Nunito:wght@700;900&display=swap" rel="stylesheet">
+    <style>
+        /* Tailwind CSS Generated Styles (Preflight & Utilities) */
+        /*
+        ! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
+        */
+        *,::before,::after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::before,::after{--tw-content:""}html,:host{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,samp,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}button,[role="button"]{cursor:pointer}:disabled{cursor:default}img,svg,video,canvas,audio,iframe,embed,object{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]{display:none}*, ::before, ::after {
+        --tw-border-spacing-x: 0;
+        --tw-border-spacing-y: 0;
+        --tw-translate-x: 0;
+        --tw-translate-y: 0;
+        --tw-rotate: 0;
+        --tw-skew-x: 0;
+        --tw-skew-y: 0;
+        --tw-scale-x: 1;
+        --tw-scale-y: 1;
+        --tw-pan-x: ;
+        --tw-pan-y: ;
+        --tw-pinch-zoom: ;
+        --tw-scroll-snap-strictness: proximity;
+        --tw-gradient-from-position: ;
+        --tw-gradient-via-position: ;
+        --tw-gradient-to-position: ;
+        --tw-ordinal: ;
+        --tw-slashed-zero: ;
+        --tw-numeric-figure: ;
+        --tw-numeric-spacing: ;
+        --tw-numeric-fraction: ;
+        --tw-ring-inset: ;
+        --tw-ring-offset-width: 0px;
+        --tw-ring-offset-color: #fff;
+        --tw-ring-color: rgb(59 130 246 / 0.5);
+        --tw-ring-offset-shadow: 0 0 #0000;
+        --tw-ring-shadow: 0 0 #0000;
+        --tw-shadow: 0 0 #0000;
+        --tw-shadow-colored: 0 0 #0000;
+        --tw-blur: ;
+        --tw-brightness: ;
+        --tw-contrast: ;
+        --tw-grayscale: ;
+        --tw-hue-rotate: ;
+        --tw-invert: ;
+        --tw-saturate: ;
+        --tw-sepia: ;
+        --tw-drop-shadow: ;
+        --tw-backdrop-blur: ;
+        --tw-backdrop-brightness: ;
+        --tw-backdrop-contrast: ;
+        --tw-backdrop-grayscale: ;
+        --tw-backdrop-hue-rotate: ;
+        --tw-backdrop-invert: ;
+        --tw-backdrop-opacity: ;
+        --tw-backdrop-saturate: ;
+        --tw-backdrop-sepia: ;
+        --tw-contain-size: ;
+        --tw-contain-layout: ;
+        --tw-contain-paint: ;
+        --tw-contain-style:
+        }
+        :host, html {
+            --tw-content: none
+        }
+        .collapse {
+            visibility: collapse
+        }
+        .transform {
+            transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))
+        }
+        .flex {
+            display: flex
+        }
+        .table {
+            display: table
+        }
+        .hidden {
+            display: none
+        }
+        .w-full {
+            width: 100%
+        }
+        .max-w-6xl {
+            max-width: 72rem
+        }
+        .max-w-md {
+            max-width: 28rem
+        }
+        .flex-col {
+            flex-direction: column
+        }
+        .items-center {
+            align-items: center
+        }
+        .justify-around {
+            justify-content: space-around
+        }
+        .rounded-xl {
+            border-radius: .75rem
+        }
+        .border-2 {
+            border-width: 2px
+        }
+        .border-purple-500 {
+            --tw-border-opacity: 1;
+            border-color: rgb(139 92 246 / var(--tw-border-opacity))
+        }
+        .bg-gray-800\/70 {
+            background-color: rgb(31 41 55 / .7)
+        }
+        .p-6 {
+            padding: 1.5rem
+        }
+        .py-3 {
+            padding-top: .75rem;
+            padding-bottom: .75rem
+        }
+        .mt-4 {
+            margin-top: 1rem
+        }
+        .mt-8 {
+            margin-top: 2rem
+        }
+        .mb-12 {
+            margin-bottom: 3rem
+        }
+        .mb-8 {
+            margin-bottom: 2rem
+        }
+        .text-center {
+            text-align: center
+        }
+        .font-bold {
+            font-weight: 700
+        }
+        .text-7xl {
+            font-size: 4.5rem;
+            line-height: 1
+        }
+        .text-xl {
+            font-size: 1.25rem;
+            line-height: 1.75rem
+        }
+        .text-purple-500 {
+            --tw-text-opacity: 1;
+            color: rgb(139 92 246 / var(--tw-text-opacity))
+        }
+        .shadow-2xl {
+            --tw-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.25);
+            --tw-shadow-colored: 0 25px 50px -12px var(--tw-shadow-color);
+            box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)
+        }
+        @media (min-width: 640px) {
+            .sm\:justify-center {
+                justify-content: center
+            }
+            .sm\:space-x-4>:not([hidden])~:not([hidden]) {
+                --tw-space-x-reverse: 0;
+                margin-right: calc(1rem * var(--tw-space-x-reverse));
+                margin-left: calc(1rem * calc(1 - var(--tw-space-x-reverse)))
+            }
+            .sm\:p-8 {
+                padding: 2rem
+            }
+            .sm\:text-8xl {
+                font-size: 6rem;
+                line-height: 1
+            }
+            .sm\:text-2xl {
+                font-size: 1.5rem;
+                line-height: 2rem
+            }
+        }
+        @media (min-width: 768px) {
+            .md\:space-x-6>:not([hidden])~:not([hidden]) {
+                --tw-space-x-reverse: 0;
+                margin-right: calc(1.5rem * var(--tw-space-x-reverse));
+                margin-left: calc(1.5rem * calc(1 - var(--tw-space-x-reverse)))
+            }
+            .md\:text-9xl {
+                font-size: 8rem;
+                line-height: 1
+            }
+        }
+        
+        /* Загальні стилі для body */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #1a1a2e; /* Темно-синій фон */
+            color: #e0e0e0; /* Світлий текст */
+            min-height: 100vh; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            padding: 1rem; 
+        }
+
+        /* Шрифти */
+        .main-header-font { 
+            font-family: 'Lobster', cursive;
+        }
+        .section-header-font { 
+            font-family: 'Nunito', sans-serif;
+            font-weight: 900;
+        }
+
+        /* Ефекти (залишені на випадок, якщо знадобляться для інших елементів) */
+        .glitch-effect {
+            animation: glitch 1.5s linear infinite;
+        }
+        @keyframes glitch {
+            2%, 64% { transform: translate(2px, 0) skew(0deg); }
+            4%, 60% { transform: translate(-2px, 0) skew(0deg); }
+            62% { transform: translate(0, 0) skew(3deg); }
+        }
+        .glitch-effect:before,
+        .glitch-effect:after {
+            content: attr(data-text);
+            position: absolute;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #1a1a2e; 
+            overflow: hidden;
+            top: 0;
+        }
+        .glitch-effect:before {
+            left: 2px;
+            text-shadow: -2px 0 #FFD700; 
+            clip: rect(44px, 450px, 56px, 0);
+            animation: glitch-anim 4s infinite linear alternate-reverse;
+        }
+        .glitch-effect:after {
+            left: -2px;
+            text-shadow: -2px 0 #A020F0, 2px 2px #FFD700; 
+            clip: rect(86px, 450px, 140px, 0);
+            animation: glitch-anim-2 4.5s infinite linear alternate-reverse;
+        }
+        @keyframes glitch-anim {
+            0% { clip: rect(42px, 9999px, 44px, 0); transform: skew(0.2deg); }
+            5% { clip: rect(58px, 9999px, 80px, 0); transform: skew(0.3deg); }
+            100% { clip: rect(3px, 9999px, 100px, 0); transform: skew(0.1deg); }
+        }
+        @keyframes glitch-anim-2 {
+            0% { clip: rect(65px, 9999px, 119px, 0); transform: skew(0.1deg); }
+            100% { clip: rect(18px, 9999px, 130px, 0); transform: skew(0.4deg); }
+        }
+
+        /* Стилі для кнопок */
+        .btn-roflo {
+            background-color: #8B5CF6; /* Tailwind purple-500 */
+            color: #ffffff;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(139, 92, 246, 0.3);
+            padding: 0.75rem 1.5rem; 
+            border-radius: 0.5rem; 
+            font-weight: bold;
+            text-align: center;
+        }
+        .btn-roflo:hover {
+            background-color: #7C3AED; /* Tailwind purple-600 */
+            transform: translateY(-2px) scale(1.05);
+            box-shadow: 0 6px 10px rgba(139, 92, 246, 0.5);
+        }
+        .btn-roflo:disabled { /* Стиль для неактивної кнопки */
+            background-color: #5a5a7d; /* Більш темний, приглушений фіолетовий */
+            color: #a0a0c0; /* Блідий текст */
+            cursor: not-allowed;
+            transform: none;
+            box-shadow: none;
+        }
+
+        /* Стилі для карток (можна буде використовувати пізніше) */
+        .card-roflo {
+            background-color: #1f2937; 
+            border: 2px solid #8B5CF6; 
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            padding: 1.5rem; 
+            border-radius: 0.75rem; 
+            text-align: center;
+        }
+        .card-roflo:hover {
+            transform: translateY(-5px) rotate(1deg);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+        }
+        
+        /* Стилі для барабанів слот-машини */
+        .reel {
+            width: 6rem; /* 96px */
+            height: 6rem; /* 96px */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #374151; /* Tailwind gray-700 */
+            border-radius: 0.5rem; /* rounded-lg */
+            font-size: 3.75rem; /* text-6xl */
+            line-height: 1;
+            box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.2); /* тінь всередину */
+            overflow: hidden; /* щоб смайлики не вилазили при анімації, якщо вона буде складнішою */
+            transition: transform 0.1s ease-out; /* для ефекту "віддачі" */
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center"> 
+    <header class="w-full max-w-6xl mt-8 mb-12 text-center">
+        <h1 class="main-header-font text-7xl sm:text-8xl md:text-9xl font-bold text-purple-500">РОФЛ КАЗИНО</h1>
+    </header>
+
+    <main class="w-full max-w-md mt-4 flex flex-col items-center">
+        <div id="slot-machine-container" class="p-6 sm:p-8 bg-gray-800/70 rounded-xl shadow-2xl border-2 border-purple-500 w-full">
+            <div id="reels" class="flex justify-around sm:justify-center sm:space-x-4 md:space-x-6 mb-8">
+                <div id="reel1" class="reel">❓</div>
+                <div id="reel2" class="reel">❓</div>
+                <div id="reel3" class="reel">❓</div>
+            </div>
+            <button id="spinButton" class="btn-roflo w-full text-xl sm:text-2xl py-3">Обертати!</button>
+        </div>
+    </main>
+
+    <script>
+        // Елементи DOM
+        const reel1 = document.getElementById('reel1');
+        const reel2 = document.getElementById('reel2');
+        const reel3 = document.getElementById('reel3');
+        const spinButton = document.getElementById('spinButton');
+
+        // Смайлики для барабанів
+        const emojis = ['😂', '👽', '💰', '💎', '💩', '🤡', '👻', '🎃', '🎁', '🎲', '💯', '💣'];
+        // const emojis = ['🍒', '🍋', '🍊', '🍉', '⭐', '🔔', '7️⃣']; // Класичні (виправлено смайлик кавуна)
+
+        let isSpinning = false; // Прапорець, щоб запобігти повторному натисканню під час обертання
+
+        // Функція для отримання випадкового смайлика
+        function getRandomEmoji() {
+            return emojis[Math.floor(Math.random() * emojis.length)];
+        }
+
+        // Функція для "обертання" одного барабана
+        function spinReel(reelElement, duration) {
+            return new Promise((resolve) => {
+                const animationInterval = 50; // мс між зміною смайлика
+                let elapsed = 0;
+
+                const intervalId = setInterval(() => {
+                    reelElement.textContent = getRandomEmoji();
+                    reelElement.style.transform = `translateY(${Math.random() > 0.5 ? '' : '-'}5px)`; // невеликий ефект трясіння
+                    setTimeout(() => { reelElement.style.transform = 'translateY(0)'; }, animationInterval / 2);
+                    
+                    elapsed += animationInterval;
+                    if (elapsed >= duration) {
+                        clearInterval(intervalId);
+                        reelElement.textContent = getRandomEmoji(); // Встановлюємо фінальний смайлик
+                        resolve();
+                    }
+                }, animationInterval);
+            });
+        }
+
+        // Обробник натискання кнопки
+        spinButton.addEventListener('click', async () => {
+            if (isSpinning) {
+                return; // Не робити нічого, якщо вже обертається
+            }
+            isSpinning = true;
+            spinButton.disabled = true; // Робимо кнопку неактивною
+            spinButton.textContent = 'Обертається...';
+
+            // Запускаємо обертання барабанів послідовно з різною тривалістю
+            // Promise.all дозволяє дочекатися завершення всіх анімацій
+            try {
+                await Promise.all([
+                    spinReel(reel1, 1000), // 1 секунда
+                    spinReel(reel2, 1500), // 1.5 секунди
+                    spinReel(reel3, 2000)  // 2 секунди
+                ]);
+            } catch (error) {
+                console.error("Помилка під час обертання:", error);
+                // У випадку помилки, все одно скидаємо стан
+            }
+            
+            // Можна додати логіку перевірки виграшу тут
+            // Наприклад: if (reel1.textContent === reel2.textContent && reel2.textContent === reel3.textContent) { ... }
+
+            isSpinning = false;
+            spinButton.disabled = false; // Знову робимо кнопку активною
+            spinButton.textContent = 'Обертати ще!';
+        });
+    </script>
+</body>
+</html>
