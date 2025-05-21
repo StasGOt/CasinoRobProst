@@ -7,10 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lobster&family=Nunito:wght@700;900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Tailwind CSS Generated Styles (Preflight & Utilities) */
-        /*
-        ! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
-        */
+
         *,::before,::after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::before,::after{--tw-content:""}html,:host{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,samp,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}button,[role="button"]{cursor:pointer}:disabled{cursor:default}img,svg,video,canvas,audio,iframe,embed,object{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]{display:none}*, ::before, ::after {
         --tw-border-spacing-x: 0;
         --tw-border-spacing-y: 0;
@@ -188,11 +185,10 @@
             }
         }
         
-        /* Общие стили для body */
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #1a1a2e; /* Темно-синий фон */
-            color: #e0e0e0; /* Светлый текст */
+            background-color: #1a1a2e; 
+            color: #e0e0e0;
             min-height: 100vh; 
             display: flex; 
             flex-direction: column; 
@@ -200,7 +196,6 @@
             padding: 1rem; 
         }
 
-        /* Шрифты */
         .main-header-font { 
             font-family: 'Lobster', cursive;
         }
@@ -209,9 +204,8 @@
             font-weight: 900;
         }
 
-        /* Эффекты */
         .glitch-effect {
-            position: relative; /* Добавлено для корректного позиционирования псевдоэлементов */
+            position: relative; 
             animation: glitch 1.5s linear infinite;
         }
         @keyframes glitch {
@@ -252,9 +246,8 @@
             100% { clip: rect(18px, 9999px, 130px, 0); transform: skew(0.4deg); }
         }
 
-        /* Стили для кнопок */
         .btn-roflo {
-            background-color: #8B5CF6; /* Tailwind purple-500 */
+            background-color: #8B5CF6; 
             color: #ffffff;
             transition: all 0.3s ease;
             box-shadow: 0 4px 6px rgba(139, 92, 246, 0.3);
@@ -264,19 +257,18 @@
             text-align: center;
         }
         .btn-roflo:hover {
-            background-color: #7C3AED; /* Tailwind purple-600 */
+            background-color: #7C3AED; 
             transform: translateY(-2px) scale(1.05);
             box-shadow: 0 6px 10px rgba(139, 92, 246, 0.5);
         }
-        .btn-roflo:disabled { /* Стиль для неактивной кнопки */
-            background-color: #5a5a7d; /* Более темный, приглушенный фиолетовый */
-            color: #a0a0c0; /* Бледный текст */
+        .btn-roflo:disabled { 
+            background-color: #5a5a7d; 
+            color: #a0a0c0; 
             cursor: not-allowed;
             transform: none;
             box-shadow: none;
         }
 
-        /* Стили для карточек (можно будет использовать позже) */
         .card-roflo {
             background-color: #1f2937; 
             border: 2px solid #8B5CF6; 
@@ -289,39 +281,37 @@
             transform: translateY(-5px) rotate(1deg);
             box-shadow: 0 10px 20px rgba(0,0,0,0.4);
         }
-        
-        /* Стили для барабанов слот-машины */
+             
         .reel {
-            width: 6rem; /* 96px */
-            height: 6rem; /* 96px */
+            width: 6rem; 
+            height: 6rem; 
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: #374151; /* Tailwind gray-700 */
-            border-radius: 0.5rem; /* rounded-lg */
-            font-size: 3.75rem; /* text-6xl */
+            background-color: #374151; 
+            border-radius: 0.5rem; 
+            font-size: 3.75rem; 
             line-height: 1;
-            box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.2); /* тень внутрь */
-            overflow: hidden; /* чтобы смайлики не вылезали при анимации, если она будет сложнее */
-            transition: transform 0.1s ease-out; /* для эффекта "отдачи" */
+            box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.2); 
+            overflow: hidden;
+            transition: transform 0.1s ease-out; 
         }
 
-        /* Стили для области сообщений */
         #message-area {
             margin-top: 1.5rem;
             padding: 1rem;
-            background-color: #2a2a4a; /* Темнее, чем фон body */
+            background-color: #2a2a4a;
             border-radius: 0.5rem;
             border: 1px solid #8B5CF6;
             color: #e0e0e0;
             font-size: 1.125rem;
             text-align: center;
-            min-height: 3rem; /* Минимальная высота для предотвращения скачков */
+            min-height: 3rem;
             display: flex;
             align-items: center;
             justify-content: center;
             width: 100%;
-            max-width: 28rem; /* Соответствует max-w-md main */
+            max-width: 28rem;
         }
     </style>
 </head>
@@ -344,79 +334,82 @@
     </main>
 
     <script>
-        // Элементы DOM
+        
         const reel1 = document.getElementById('reel1');
         const reel2 = document.getElementById('reel2');
         const reel3 = document.getElementById('reel3');
         const spinButton = document.getElementById('spinButton');
-        const messageArea = document.getElementById('message-area'); // Область для сообщений
+        const messageArea = document.getElementById('message-area');
 
         // Смайлики для барабанов
         const emojis = ['😂', '👽', '💰', '💎', '💩', '🤡', '👻', '🎃', '🎁', '🎲', '💯', '💣'];
 
-        // --- МЕСТО ДЛЯ ВАШИХ КОМБИНАЦИЙ И ФРАЗ ---
-        // Каждая комбинация - это массив из трех смайликов, а phrase - соответствующая фраза.
-        // Вы можете добавить до 5 таких комбинаций.
+        // --- МЕСТО ДЛЯ КОМБИНАЦИЙ И ФРАЗ ---
         const customCombinations = [
-            { emojis: ['🤡', '🤡', '🤡'], phrase: "ти получаєш мінєт від... Cтаса!♿♿♿" },
-            { emojis: ['💰', '💰', '💰'], phrase: "ти получаєш мінєт від... Глазарія👁👁👁👁" },
+            { emojis: ['🤡', '🤡', '🤡'], phrase: "ти получаєш мінєт від... Cтаса!🐫🐫🐫" },
+            { emojis: ['💰', '💰', '💰'], phrase: "ти получаєш мінєт від... Глазарія👁️👁️👁️" },
             { emojis: ['💎', '💎', '💎'], phrase: "ти получаєш мінєт від... Юри💝🥰" },
             { emojis: ['😂', '😂', '😂'], phrase: "ти получаєш мінєт від... Михайла втикайла😖😵" },
-            { emojis: ['💩', '💩', '💩'], phrase: "ну це кал а ти ідіот тупий крути ше раз" }
-            // Добавьте свои комбинации здесь
+            { emojis: ['👻', '👻', '👻'], phrase: "ти получаєш мінєт від... фізички👅👅👅👅👅👅" },
+            { emojis: ['👽', '👽', '👽'], phrase: "ти получаєш мінєт від... ЖЕНІ😨😨😨" },
+            { emojis: ['🎃', '🎃', '🎃'], phrase: "ти получаєш мінєт від... Медіка МГЕ🙋♂️🇩🇪🇩🇪🇩🇪" },
+            { emojis: ['🎁', '🎁', '🎁'], phrase: "ти получаєш мінєт від... Дядька Богдана!🏳️🌈🏳️🌈🏳️🌈🏳️🌈🏳️🌈" },
+            { emojis: ['🎲', '🎲', '🎲'], phrase: "ти получаєш мінєт від... Зарубіжки🤮🤮🤮" },
+            { emojis: ['💯', '💯', '💯'], phrase: "ти получаєш мінєт від... 👁Бінаурального👁бегемота👁" },
+            { emojis: ['💣', '💣', '💣'], phrase: "ти получаєш мінєт від... Влада🐧🐧🐧" },
+            { emojis: ['😂', '👽', '💰'], phrase: "ти получаєш мінєт від... Сергія😮😮😮" },
+            { emojis: ['💎', '💩', '🤡'], phrase: "ти получаєш мінєт від Дім... нє не треба" },
+
         ];
-        // --- КОНЕЦ МЕСТА ДЛЯ ВАШИХ КОМБИНАЦИЙ И ФРАЗ ---
+        // --- КОНЕЦ МЕСТА ДЛЯ КОМБИНАЦИЙ И ФРАЗ ---
 
-        let isSpinning = false; // Флаг, чтобы предотвратить повторное нажатие во время вращения
+        let isSpinning = false; 
 
-        // Функция для получения случайного смайлика
         function getRandomEmoji() {
             return emojis[Math.floor(Math.random() * emojis.length)];
         }
 
-        // Функция для "вращения" одного барабана
         function spinReel(reelElement, duration) {
             return new Promise((resolve) => {
-                const animationInterval = 50; // мс между сменой смайлика
+                const animationInterval = 50;
                 let elapsed = 0;
 
                 const intervalId = setInterval(() => {
                     reelElement.textContent = getRandomEmoji();
-                    reelElement.style.transform = `translateY(${Math.random() > 0.5 ? '' : '-'}5px)`; // небольшой эффект тряски
+                    reelElement.style.transform = `translateY(${Math.random() > 0.5 ? '' : '-'}5px)`;
                     setTimeout(() => { reelElement.style.transform = 'translateY(0)'; }, animationInterval / 2);
                     
                     elapsed += animationInterval;
                     if (elapsed >= duration) {
                         clearInterval(intervalId);
-                        const finalEmoji = getRandomEmoji(); // Выбираем финальный смайлик
-                        reelElement.textContent = finalEmoji; // Устанавливаем финальный смайлик
-                        resolve(finalEmoji); // Возвращаем финальный смайлик
+                        const finalEmoji = getRandomEmoji(); 
+                        reelElement.textContent = finalEmoji;
+                        resolve(finalEmoji);
                     }
                 }, animationInterval);
             });
         }
 
-        // Функция для отображения сообщения
         function displayMessage(message) {
             messageArea.textContent = message;
         }
 
-        // Обработчик нажатия кнопки
+    
         spinButton.addEventListener('click', async () => {
             if (isSpinning) {
-                return; // Ничего не делать, если уже вращается
+                return;
             }
             isSpinning = true;
-            spinButton.disabled = true; // Делаем кнопку неактивной
+            spinButton.disabled = true; 
             spinButton.textContent = 'Обертається...';
-            displayMessage(''); // Очищаем предыдущее сообщение
+            displayMessage(''); 
 
-            // Запускаем вращение барабанов последовательно с разной продолжительностью
+    
             try {
                 const results = await Promise.all([
-                    spinReel(reel1, 1000), // 1 секунда
-                    spinReel(reel2, 1500), // 1.5 секунды
-                    spinReel(reel3, 2000)  // 2 секунды
+                    spinReel(reel1, 1000), 
+                    spinReel(reel2, 1500), 
+                    spinReel(reel3, 2000) 
                 ]);
 
                 const [finalEmoji1, finalEmoji2, finalEmoji3] = results;
@@ -428,7 +421,7 @@
                         finalEmoji3 === combo.emojis[2]) {
                         displayMessage(combo.phrase);
                         foundCombination = true;
-                        break; // Выходим после нахождения первой комбинации
+                        break; 
                     }
                 }
 
@@ -441,12 +434,12 @@
                 displayMessage('Сталась помилка при обертанні. Спробуй ще раз.');
             } finally {
                 isSpinning = false;
-                spinButton.disabled = false; // Снова делаем кнопку активной
+                spinButton.disabled = false; 
                 spinButton.textContent = 'Обертати ще раз!';
             }
         });
 
-        // Инициализация сообщения
+     
         displayMessage('Нажми "Обертати!", щоб випасти з вікна');
     </script>
 </body>
