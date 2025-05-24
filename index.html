@@ -7,8 +7,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lobster&family=Nunito:wght@700;900&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-
-        *,::before,::after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::before,::after{--tw-content:""}html,:host{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,samp,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}button,[role="button"]{cursor:pointer}:disabled{cursor:default}img,svg,video,canvas,audio,iframe,embed,object{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]{display:none}*, ::before, ::after {
+        *,::before,::after{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::before,::after{--tw-content:""}html,:host{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif,system-ui,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,samp,pre{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation New",monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,[type="button"],[type="reset"],[type="submit"]{-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}textarea{resize:vertical}input::-moz-placeholder,textarea::-moz-placeholder{opacity:1;color:#9ca3af}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}button,[role="button"]{cursor:pointer}:disabled{cursor:default}img,svg,video,canvas,audio,iframe,embed,object{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]{display:none}*, ::before, ::after {
         --tw-border-spacing-x: 0;
         --tw-border-spacing-y: 0;
         --tw-translate-x: 0;
@@ -187,25 +186,25 @@
         
         body {
             font-family: 'Inter', sans-serif;
-            background-color: #1a1a2e; 
+            background-color: #1a1a2e;
             color: #e0e0e0;
-            min-height: 100vh; 
-            display: flex; 
-            flex-direction: column; 
-            align-items: center; 
-            padding: 1rem; 
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1rem;
         }
 
-        .main-header-font { 
+        .main-header-font {
             font-family: 'Lobster', cursive;
         }
-        .section-header-font { 
+        .section-header-font {
             font-family: 'Nunito', sans-serif;
             font-weight: 900;
         }
 
         .glitch-effect {
-            position: relative; 
+            position: relative;
             animation: glitch 1.5s linear infinite;
         }
         @keyframes glitch {
@@ -220,26 +219,26 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: #1a1a2e; 
+            background: #1a1a2e;
             overflow: hidden;
             top: 0;
         }
         .glitch-effect:before {
             left: 2px;
-            text-shadow: -2px 0 #FFD700; 
+            text-shadow: -2px 0 #FFD700;
             clip: rect(44px, 450px, 56px, 0);
             animation: glitch-anim 4s infinite linear alternate-reverse;
-        }
-        .glitch-effect:after {
-            left: -2px;
-            text-shadow: -2px 0 #A020F0, 2px 2px #FFD700; 
-            clip: rect(86px, 450px, 140px, 0);
-            animation: glitch-anim-2 4.5s infinite linear alternate-reverse;
         }
         @keyframes glitch-anim {
             0% { clip: rect(42px, 9999px, 44px, 0); transform: skew(0.2deg); }
             5% { clip: rect(58px, 9999px, 80px, 0); transform: skew(0.3deg); }
             100% { clip: rect(3px, 9999px, 100px, 0); transform: skew(0.1deg); }
+        }
+        .glitch-effect:after {
+            left: -2px;
+            text-shadow: -2px 0 #A020F0, 2px 2px #FFD700;
+            clip: rect(86px, 450px, 140px, 0);
+            animation: glitch-anim-2 4.5s infinite linear alternate-reverse;
         }
         @keyframes glitch-anim-2 {
             0% { clip: rect(65px, 9999px, 119px, 0); transform: skew(0.1deg); }
@@ -247,54 +246,54 @@
         }
 
         .btn-roflo {
-            background-color: #8B5CF6; 
+            background-color: #8B5CF6;
             color: #ffffff;
             transition: all 0.3s ease;
             box-shadow: 0 4px 6px rgba(139, 92, 246, 0.3);
-            padding: 0.75rem 1.5rem; 
-            border-radius: 0.5rem; 
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
             font-weight: bold;
             text-align: center;
         }
         .btn-roflo:hover {
-            background-color: #7C3AED; 
+            background-color: #7C3AED;
             transform: translateY(-2px) scale(1.05);
             box-shadow: 0 6px 10px rgba(139, 92, 246, 0.5);
         }
-        .btn-roflo:disabled { 
-            background-color: #5a5a7d; 
-            color: #a0a0c0; 
+        .btn-roflo:disabled {
+            background-color: #5a5a7d;
+            color: #a0a0c0;
             cursor: not-allowed;
             transform: none;
             box-shadow: none;
         }
 
         .card-roflo {
-            background-color: #1f2937; 
-            border: 2px solid #8B5CF6; 
+            background-color: #1f2937;
+            border: 2px solid #8B5CF6;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
-            padding: 1.5rem; 
-            border-radius: 0.75rem; 
+            padding: 1.5rem;
+            border-radius: 0.75rem;
             text-align: center;
         }
         .card-roflo:hover {
             transform: translateY(-5px) rotate(1deg);
             box-shadow: 0 10px 20px rgba(0,0,0,0.4);
         }
-             
+            
         .reel {
-            width: 6rem; 
-            height: 6rem; 
+            width: 6rem;
+            height: 6rem;
             display: flex;
             align-items: center;
             justify-content: center;
-            background-color: #374151; 
-            border-radius: 0.5rem; 
-            font-size: 3.75rem; 
+            background-color: #374151;
+            border-radius: 0.5rem;
+            font-size: 3.75rem;
             line-height: 1;
-            box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.2); 
+            box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.2);
             overflow: hidden;
-            transition: transform 0.1s ease-out; 
+            transition: transform 0.1s ease-out;
         }
 
         #message-area {
@@ -315,7 +314,7 @@
         }
     </style>
 </head>
-<body class="flex flex-col items-center"> 
+<body class="flex flex-col items-center">    
     <header class="w-full max-w-6xl mt-8 mb-12 text-center">
         <h1 class="main-header-font text-7xl sm:text-8xl md:text-9xl font-bold text-purple-500 glitch-effect" data-text="ò6рę4ēн">ò6рę4ēн</h1>
     </header>
@@ -323,9 +322,9 @@
     <main class="w-full max-w-md mt-4 flex flex-col items-center">
         <div id="slot-machine-container" class="p-6 sm:p-8 bg-gray-800/70 rounded-xl shadow-2xl border-2 border-purple-500 w-full">
             <div id="reels" class="flex justify-around sm:justify-center sm:space-x-4 md:space-x-6 mb-8">
-                <div id="reel1" class="reel">❓</div>
-                <div id="reel2" class="reel">❓</div>
-                <div id="reel3" class="reel">❓</div>
+                <div id="reel1" class="reel">👽</div>
+                <div id="reel2" class="reel">🤡</div>
+                <div id="reel3" class="reel">😂</div>
             </div>
             <button id="spinButton" class="btn-roflo w-full text-xl sm:text-2xl py-3">Обертати!</button>
         </div>
@@ -334,36 +333,31 @@
     </main>
 
     <script>
-        
         const reel1 = document.getElementById('reel1');
         const reel2 = document.getElementById('reel2');
         const reel3 = document.getElementById('reel3');
         const spinButton = document.getElementById('spinButton');
         const messageArea = document.getElementById('message-area');
 
-        // Смайлики для барабанов
-        const emojis = ['😂', '👽', '💰', '💎', '💩', '🤡', '👻', '🎃', '🎁', '🎲', '💯', '💣'];
+        const emojis = ['👽', '🤡', '😂'];
 
-        // --- МЕСТО ДЛЯ КОМБИНАЦИЙ И ФРАЗ ---
         const customCombinations = [
-            { emojis: ['🤡', '🤡', '🤡'], phrase: "ти получаєш мінєт від... Cтаса!🐫🐫🐫" },
-            { emojis: ['💰', '💰', '💰'], phrase: "ти получаєш мінєт від... Глазарія👁️👁️👁️" },
-            { emojis: ['💎', '💎', '💎'], phrase: "ти получаєш мінєт від... Юри💝🥰" },
-            { emojis: ['😂', '😂', '😂'], phrase: "ти получаєш мінєт від... Михайла втикайла😖😵" },
-            { emojis: ['👻', '👻', '👻'], phrase: "ти получаєш мінєт від... фізички👅👅👅👅👅👅" },
-            { emojis: ['👽', '👽', '👽'], phrase: "ти получаєш мінєт від... ЖЕНІ😨😨😨" },
-            { emojis: ['🎃', '🎃', '🎃'], phrase: "ти получаєш мінєт від... Медіка МГЕ🙋♂️🇩🇪🇩🇪🇩🇪" },
-            { emojis: ['🎁', '🎁', '🎁'], phrase: "ти получаєш мінєт від... Дядька Богдана!🏳️🌈🏳️🌈🏳️🌈🏳️🌈🏳️🌈" },
-            { emojis: ['🎲', '🎲', '🎲'], phrase: "ти получаєш мінєт від... Зарубіжки🤮🤮🤮" },
-            { emojis: ['💯', '💯', '💯'], phrase: "ти получаєш мінєт від... 👁Бінаурального👁бегемота👁" },
-            { emojis: ['💣', '💣', '💣'], phrase: "ти получаєш мінєт від... Влада🐧🐧🐧" },
-            { emojis: ['😂', '👽', '💰'], phrase: "ти получаєш мінєт від... Сергія😮😮😮" },
-            { emojis: ['💎', '💩', '🤡'], phrase: "ти получаєш мінєт від Дім... нє не треба" },
-
+            { emojis: ['👽', '👽', '👽'], phrase: "ти получаєш мінєт від... Cтаса!🐫🐫🐫" },
+            { emojis: ['🤡', '🤡', '🤡'], phrase: "ти получаєш мінєт від... Глазарія👁️👁️👁️" },
+            { emojis: ['😂', '😂', '😂'], phrase: "ти получаєш мінєт від... Юри💝🥰" },
+            { emojis: ['👽', '🤡', '😂'], phrase: "ти получаєш мінєт від... Михайла втикайла😖😵" },
+            { emojis: ['😂', '🤡', '👽'], phrase: "ти получаєш мінєт від... фізички👅👅👅👅👅👅" },
+            { emojis: ['👽', '🤡', '👽'], phrase: "ти получаєш мінєт від... ЖЕНІ😨😨😨" },
+            { emojis: ['👽', '🤡', '🤡'], phrase: "ти получаєш мінєт від... Медіка МГЕ🙋♂️🇩🇪🇩🇪🇩🇪" },
+            { emojis: ['🤡', '🤡', '👽'], phrase: "ти получаєш мінєт від... Дядька Богдана!🏳️🌈🏳️🌈🏳️🌈🏳️🌈🏳️🌈" },
+            { emojis: ['😂', '😂', '👽'], phrase: "ти получаєш мінєт від... Зарубіжки🤮🤮🤮" },
+            { emojis: ['😂', '🤡', '😂'], phrase: "ти получаєш мінєт від... 👁Бінаурального👁бегемота👁" },
+            { emojis: ['😂', '👽', '👽'], phrase: "ти получаєш мінєт від... Влада🐧🐧🐧" },
+            { emojis: ['😂', '👽', '🤡'], phrase: "ти получаєш мінєт від... Сергія😮😮😮" },
+            { emojis: ['👽', '😂', '🤡'], phrase: "ти получаєш мінєт від Дім... нє не треба" },
         ];
-        // --- КОНЕЦ МЕСТА ДЛЯ КОМБИНАЦИЙ И ФРАЗ ---
 
-        let isSpinning = false; 
+        let isSpinning = false;
 
         function getRandomEmoji() {
             return emojis[Math.floor(Math.random() * emojis.length)];
@@ -382,7 +376,7 @@
                     elapsed += animationInterval;
                     if (elapsed >= duration) {
                         clearInterval(intervalId);
-                        const finalEmoji = getRandomEmoji(); 
+                        const finalEmoji = getRandomEmoji();
                         reelElement.textContent = finalEmoji;
                         resolve(finalEmoji);
                     }
@@ -394,22 +388,21 @@
             messageArea.textContent = message;
         }
 
-    
+        
         spinButton.addEventListener('click', async () => {
             if (isSpinning) {
                 return;
             }
             isSpinning = true;
-            spinButton.disabled = true; 
+            spinButton.disabled = true;
             spinButton.textContent = 'Обертається...';
-            displayMessage(''); 
+            displayMessage('');
 
-    
             try {
                 const results = await Promise.all([
-                    spinReel(reel1, 1000), 
-                    spinReel(reel2, 1500), 
-                    spinReel(reel3, 2000) 
+                    spinReel(reel1, 1000),
+                    spinReel(reel2, 1500),
+                    spinReel(reel3, 2000)
                 ]);
 
                 const [finalEmoji1, finalEmoji2, finalEmoji3] = results;
@@ -421,26 +414,25 @@
                         finalEmoji3 === combo.emojis[2]) {
                         displayMessage(combo.phrase);
                         foundCombination = true;
-                        break; 
+                        break;
                     }
                 }
 
                 if (!foundCombination) {
-                    displayMessage('Попробуй ше раз ідіот');
+                    displayMessage('Пробуй ше раз ідіот');
                 }
 
             } catch (error) {
                 console.error("Помилка при обертанні:", error);
-                displayMessage('Сталась помилка при обертанні. Спробуй ще раз.');
+                displayMessage('Сталася помилка при обертанні. Спробуй ше раз.');
             } finally {
                 isSpinning = false;
-                spinButton.disabled = false; 
-                spinButton.textContent = 'Обертати ще раз!';
+                spinButton.disabled = false;
+                spinButton.textContent = 'Обертати ше раз!';
             }
         });
 
-     
-        displayMessage('Нажми "Обертати!", щоб випасти з вікна');
+        displayMessage('Нажми "Обертати!", шоб випасти з вікна');
     </script>
 </body>
 </html>
